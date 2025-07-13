@@ -1,20 +1,9 @@
 <template>
-  <q-page class="flex flex-center">
-    <img alt="Quasar logo" src="~assets/quasar-logo-vertical.svg" style="width: 200px; height: 200px">
-    <img alt="Quasar logo" src="~assets/quasar-logo-vertical.svg" style="width: 200px; height: 200px">
-  </q-page>
-</template>
-
-<script setup>
-//
-</script>
-
-<template>
   <div class="q-pa-md" style="max-width: 400px">
 
     <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
-      <q-input filled v-model="name" label="Your name *" hint="Name and surname" lazy-rules
-        :rules="[val => val && val.length > 0 || 'Please type something']" />
+      <q-input filled v-model="name" label="กรุณากรอกชื่อ *" hint="กรุณากรอกชื่อ" lazy-rules
+        :rules="[val => val && val.length > 0 || 'กรุณากรอกชื่อ']" />
 
       <q-input filled type="number" v-model="age" label="Your age *" lazy-rules :rules="[
         val => val !== null && val !== '' || 'Please type your age',
