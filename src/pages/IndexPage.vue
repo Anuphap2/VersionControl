@@ -6,7 +6,7 @@
         :rules="[val => val && val.length > 0 || 'Please type something']" />
 
       <q-input filled type="number" v-model="age" label="อายุ *" lazy-rules :rules="[
-        val => val !== null && val !== '' || 'กรุณากรอกอายุ',
+        val => val !== null && val !== '' || 'กรุณากรอกอายุด้วยเถอะนะแ',
         val => val > 0 && val < 100 || 'กรุณากรอกอายุที่ถูกต้อง (1-99) เหอะนะขอร้อง'
       ]" />
 
