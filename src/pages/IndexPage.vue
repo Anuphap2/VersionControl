@@ -5,9 +5,9 @@
       <q-input filled v-model="name" label="Your name *" hint="Name and surname" lazy-rules
         :rules="[val => val && val.length > 0 || 'Please type something']" />
 
-      <q-input filled type="number" v-model="age" label="Your age *" lazy-rules :rules="[
-        val => val !== null && val !== '' || 'Please type your age',
-        val => val > 0 && val < 100 || 'Please type a real age'
+      <q-input filled type="number" v-model="age" label="อายุ *" lazy-rules :rules="[
+        val => val !== null && val !== '' || 'กรุณากรอกอายุ',
+        val => val > 0 && val < 100 || 'กรุณากรอกอายุที่ถูกต้อง (1-99)'
       ]" />
 
       <q-toggle v-model="accept" label="I accept the license and terms" />
