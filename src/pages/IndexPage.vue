@@ -2,12 +2,12 @@
   <div class="q-pa-md" style="max-width: 400px">
 
     <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
-      <q-input filled v-model="name" label="กรุณากรอกชื่อ *" hint="กรุณากรอกชื่อ" lazy-rules
-        :rules="[val => val && val.length > 0 || 'กรุณากรอกชื่อ']" />
+      <q-input filled v-model="name" label="ชื่อ-นามสกุล *" hint="กรุณากรอกชื่อ-นามสกุล" lazy-rules
+        :rules="[val => val && val.length > 0 || 'กรุณากรอกชื่อ-นามสกุลให้ถูกต้อง']" />
 
-      <q-input filled type="number" v-model="age" label="Your age *" lazy-rules :rules="[
-        val => val !== null && val !== '' || 'Please type your age',
-        val => val > 0 && val < 100 || 'Please type a real age'
+      <q-input filled type="number" v-model="age" label="อายุ *" lazy-rules :rules="[
+        val => val !== null && val !== '' || 'กรุณากรอกอายุ',
+        val => val > 0 && val < 100 || 'กรุณากรอกอายุให้ถูกต้อง (1-99)'
       ]" />
 
       <q-toggle v-model="accept" label="I accept the license and terms" />
