@@ -7,7 +7,7 @@
 
       <q-input filled type="number" v-model="age" label="อายุ *" lazy-rules :rules="[
         val => val !== null && val !== '' || 'กรุณากรอกอายุ',
-        val => val > 0 && val < 100 || 'กรุณากรอกอายุที่ถูกต้อง (1-99)'
+        val => val > 0 && val < 100 || 'กรุณากรอกอายุที่ถูกต้อง (1-99) เหอะนะขอร้อง'
       ]" />
 
       <q-toggle v-model="accept" label="I accept the license and terms" />
