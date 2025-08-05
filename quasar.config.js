@@ -1,7 +1,15 @@
 // Configuration for your app
 // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-file
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+import { defineConfig } from "#q-app/wrappers";
+=======
 import { defineConfig } from '#q-app/wrappers'
+>>>>>>> thai-lang
+=======
+import { defineConfig } from '#q-app/wrappers'
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
 
 export default defineConfig((ctx) => {
   return {
@@ -11,6 +19,13 @@ export default defineConfig((ctx) => {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-webpack/boot-files
+<<<<<<< HEAD
+<<<<<<< HEAD
+    boot: ["axios"],
+
+    // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-file#css
+    css: ["app.scss"],
+=======
     boot: [
       'axios'
     ],
@@ -19,6 +34,17 @@ export default defineConfig((ctx) => {
     css: [
       'app.scss'
     ],
+>>>>>>> thai-lang
+=======
+    boot: [
+      'axios'
+    ],
+
+    // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-file#css
+    css: [
+      'app.scss'
+    ],
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
@@ -30,14 +56,32 @@ export default defineConfig((ctx) => {
       // 'line-awesome',
       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "roboto-font", // optional, you are not bound to it
+      "material-icons", // optional, you are not bound to it
+=======
       'roboto-font', // optional, you are not bound to it
       'material-icons', // optional, you are not bound to it
+>>>>>>> thai-lang
+=======
+      'roboto-font', // optional, you are not bound to it
+      'material-icons', // optional, you are not bound to it
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
     ],
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/quasar-config-file#build
     build: {
       // publicPath: '/',
+<<<<<<< HEAD
+<<<<<<< HEAD
+      vueRouterMode: "hash", // available values: 'hash', 'history'
+=======
       vueRouterMode: 'hash', // available values: 'hash', 'history'
+>>>>>>> thai-lang
+=======
+      vueRouterMode: 'hash', // available values: 'hash', 'history'
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
 
       // webpackTranspile: false,
 
@@ -47,8 +91,18 @@ export default defineConfig((ctx) => {
       // webpackTranspileDependencies: [],
 
       esbuildTarget: {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        browser: ["es2022", "firefox115", "chrome115", "safari14"],
+        node: "node20",
+=======
         browser: [ 'es2022', 'firefox115', 'chrome115', 'safari14' ],
         node: 'node20'
+>>>>>>> thai-lang
+=======
+        browser: [ 'es2022', 'firefox115', 'chrome115', 'safari14' ],
+        node: 'node20'
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
       },
 
       // rtl: true, // https://quasar.dev/options/rtl-support
@@ -67,9 +121,21 @@ export default defineConfig((ctx) => {
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/quasar-config-file#devserver
     devServer: {
       server: {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        type: "http",
+      },
+      open: true, // opens browser window automatically
+=======
         type: 'http'
       },
       open: true // opens browser window automatically
+>>>>>>> thai-lang
+=======
+        type: 'http'
+      },
+      open: true // opens browser window automatically
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
     },
 
     // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-file#framework
@@ -87,9 +153,19 @@ export default defineConfig((ctx) => {
       // directives: [],
 
       // Quasar plugins
+<<<<<<< HEAD
+<<<<<<< HEAD
+      plugins: ["Notify"],
+=======
       plugins: [
         'Notify'
       ]
+>>>>>>> thai-lang
+=======
+      plugins: [
+        'Notify'
+      ]
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
     },
 
     // animations: 'all', // --- includes all animations
@@ -113,10 +189,24 @@ export default defineConfig((ctx) => {
     // https://v2.quasar.dev/quasar-cli-webpack/developing-ssr/configuring-ssr
     ssr: {
       prodPort: 3000, // The default port that the production server should use
+<<<<<<< HEAD
+<<<<<<< HEAD
+      // (gets superseded if process.env.PORT is specified at runtime)
+
+      middlewares: [
+        "render", // keep this as last one
+=======
                       // (gets superseded if process.env.PORT is specified at runtime)
 
       middlewares: [
         'render' // keep this as last one
+>>>>>>> thai-lang
+=======
+                      // (gets superseded if process.env.PORT is specified at runtime)
+
+      middlewares: [
+        'render' // keep this as last one
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
       ],
 
       // extendPackageJson (json) {},
@@ -127,7 +217,15 @@ export default defineConfig((ctx) => {
       // manualStoreHydration: true,
       // manualPostHydrationTrigger: true,
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+      pwa: false,
+=======
       pwa: false
+>>>>>>> thai-lang
+=======
+      pwa: false
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
       // pwaOfflineHtmlFilename: 'offline.html', // do NOT use index.html as name!
 
       // pwaExtendGenerateSWOptions (cfg) {},
@@ -136,7 +234,15 @@ export default defineConfig((ctx) => {
 
     // https://v2.quasar.dev/quasar-cli-webpack/developing-pwa/configuring-pwa
     pwa: {
+<<<<<<< HEAD
+<<<<<<< HEAD
+      workboxMode: "GenerateSW", // 'GenerateSW' or 'InjectManifest'
+=======
       workboxMode: 'GenerateSW' // 'GenerateSW' or 'InjectManifest'
+>>>>>>> thai-lang
+=======
+      workboxMode: 'GenerateSW' // 'GenerateSW' or 'InjectManifest'
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
       // swFilename: 'sw.js',
       // manifestFilename: 'manifest.json',
       // extendManifestJson (json) {},
@@ -154,7 +260,15 @@ export default defineConfig((ctx) => {
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/developing-capacitor-apps/configuring-capacitor
     capacitor: {
+<<<<<<< HEAD
+<<<<<<< HEAD
+      hideSplashscreen: true,
+=======
       hideSplashscreen: true
+>>>>>>> thai-lang
+=======
+      hideSplashscreen: true
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/developing-electron-apps/configuring-electron
@@ -165,22 +279,48 @@ export default defineConfig((ctx) => {
       // extendPackageJson (json) {},
 
       // Electron preload scripts (if any) from /src-electron, WITHOUT file extension
+<<<<<<< HEAD
+<<<<<<< HEAD
+      preloadScripts: ["electron-preload"],
+=======
       preloadScripts: [ 'electron-preload' ],
+>>>>>>> thai-lang
+=======
+      preloadScripts: [ 'electron-preload' ],
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
 
       // specify the debugging port to use for the Electron app when running in development mode
       inspectPort: 5858,
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+      bundler: "packager", // 'packager' or 'builder'
+
+      packager: {
+        // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
+=======
       bundler: 'packager', // 'packager' or 'builder'
 
       packager: {
         // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
 
+>>>>>>> thai-lang
+=======
+      bundler: 'packager', // 'packager' or 'builder'
+
+      packager: {
+        // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
+
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
         // OS X / Mac App Store
         // appBundleId: '',
         // appCategoryType: '',
         // osxSign: '',
         // protocol: 'myapp://path',
+<<<<<<< HEAD
+=======
 
+>>>>>>> thai-lang
         // Windows only
         // win32metadata: { ... }
       },
@@ -188,8 +328,18 @@ export default defineConfig((ctx) => {
       builder: {
         // https://www.electron.build/configuration/configuration
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+        appId: "quasar-project",
+      },
+=======
         appId: 'quasar-project'
       }
+>>>>>>> thai-lang
+=======
+        appId: 'quasar-project'
+      }
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/developing-browser-extensions/configuring-bex
@@ -205,7 +355,20 @@ export default defineConfig((ctx) => {
        *
        * @example [ 'my-script.ts', 'sub-folder/my-other-script.js' ]
        */
+<<<<<<< HEAD
+<<<<<<< HEAD
+      extraScripts: [],
+    },
+  };
+});
+=======
+=======
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
       extraScripts: []
     }
   }
 })
+<<<<<<< HEAD
+>>>>>>> thai-lang
+=======
+>>>>>>> 5fbfbb714c574bf9faf5f568e2df6f91e09c1c0e
