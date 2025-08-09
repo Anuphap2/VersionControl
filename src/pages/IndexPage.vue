@@ -30,7 +30,7 @@
       <q-toggle v-model="accept" label="ยอมรับ" />
 
       <div>
-        <q-btn label="ยอมรับ" type="submit" color="primary"/>
+        <q-btn label="ยอมรับเถอะนะคนดี" type="submit" color="primary"/>
         <q-btn label="ยกเลิก" type="reset" color="primary" flat class="q-ml-sm" />
       </div>
     </q-form>
